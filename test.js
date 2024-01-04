@@ -1,5 +1,5 @@
 
-
+// why capital?
 let Product = document.querySelector('.Product-text')
 let price = document.querySelector('.Product-number')
 let category = document.querySelector('.category')
@@ -14,7 +14,6 @@ let ProductButton = document.querySelector('.Add-Product')
 ProductButton.addEventListener("click", function () {
     if (Product.value && price.value && category.value && image.value) {
         let listProduct = {
-
             "Product": Product.value,
             "price": price.value,
             "category": category.value,
@@ -30,7 +29,7 @@ ProductButton.addEventListener("click", function () {
     } else (alert("All fields must be filled"))
 })
 
-
+// why to long function
 function create(product, length) {
     let tr = document.createElement('tr')
     tr.className = 'length' + length ;
@@ -62,6 +61,7 @@ function create(product, length) {
 function clearButton(length) {
     let tr = document.querySelector('.length' + length)
     cartTable.removeChild(tr)
+    //good!
     list.splice(length, 1);
 
 }
