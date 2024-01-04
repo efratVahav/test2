@@ -5,9 +5,8 @@ let price = document.querySelector('.Product-number')
 let category = document.querySelector('.category')
 let image = document.querySelector('#productImage')
 let cartTable = document.querySelector('#cartTable')
-
+// why list? itemlist? shoplist?
 let list = []
-
 
 let ProductButton = document.querySelector('.Add-Product')
 
@@ -22,6 +21,7 @@ ProductButton.addEventListener("click", function () {
         list.push(listProduct)
 
         create(listProduct, list.length)
+        //this need to be a function 
         Product.value=""
         price.value=""
         category.value=""
@@ -47,6 +47,7 @@ function create(product, length) {
     imageElement.appendChild(image)
     let tdButten = document.createElement('td')
     tdButten.innerHTML = '<button onclick="clearButton('+length+')">Delete</button>';
+    //extract this
     tr.appendChild(ProductElement)
     tr.appendChild(priceElement)
     tr.appendChild(categoryElement)
@@ -55,9 +56,8 @@ function create(product, length) {
 
     cartTable.appendChild(tr)
    
-
-
 }
+
 function clearButton(length) {
     let tr = document.querySelector('.length' + length)
     cartTable.removeChild(tr)
