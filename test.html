@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Add Product</h1>
+    Product name: <input type="text" class="Product-text" id="Product-text" />
+   <br> 
+   price:<input type="number" class="Product-number" id="Product-number"/>
+   <br>
+    
+    <p><select class="category">
+        <option value="">Select Category</option>
+        <option value="drinks">Drinks</option>
+        <option value="meat">Meat</option>
+        <option value="dairy">Dairy</option>
+        <option value="snacks">Snacks</option>
+        <option value="basic">Basic</option>
+      </select></p>
+
+      
+   
+    <input type="text" id="productImage" placeholder="Image Link" />
+    <br>
+    <br/>
+
+      <button class="Add-Product" id="Add-Product">Add Product</button>
+
+      <h2>My Cart</h2>
+
+      <table id="cartTable">
+        <tr>
+          <th class="Product Name">Product Name</th>
+          <th class="Price">Price</th>
+          <th class="Category">Category</th>
+          <th class="Picture">Picture</th>
+          <th class="Actions">Actions</th>
+        </tr>
+       
+      </table>
+      
+      <script src="test.js"></script>
+</body>
+</html>
